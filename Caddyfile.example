@@ -1,0 +1,6 @@
+# Пример Caddyfile: автоматические HTTPS-сертификаты.
+# Замените example.com на ваш домен и направьте DNS A/AAAA на сервер.
+example.com {
+    encode zstd gzip
+    reverse_proxy 127.0.0.1:3000
+}
